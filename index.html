@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Favicon a continuacion -->
+        <link rel="Shortcut Icon" href="resources/design/skullfavicon.png" type="image/x-icon">
+        <!-- LINK A BOOTSTRAP -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <!-- link a google font montserrat -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&display=swap" rel="stylesheet">
+        <!-- Titulo web en pestaña -->
+        <title>Lucho.B - Retouch</title>
+        <!-- link a CSS -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+
+    <body>      
+        <header>
+            <!-- LOGO HOME con boton hacia Welcome -->
+                <section class="home-container">
+                    <img class="logohome" src="resources/design/logo lucho skull.png" alt="LOGO LuchoB-RETOUCH" title="Logo LuchoB"/>
+                    <a href="#welcome-id2"><img class="botonhome" src="resources/design/button.png" alt="Boton Redondo flecha abajo" title="Boton Redondo"/></a>
+                </section>
+        </header>
+        
+        <main>
+            <!-- Seccion Welcome con Botonera  -->
+            
+            <!-- invisible para que el link de arriba tenga un espacio sobre la palabra WELCOME -->
+            <section class="sect-home">
+                <h1 id="welcome-id2"></h1>
+                <h1 id="welcome-id">Welcome</h1>
+                <!-- Botones redondos Naranjas del homa para distintas secciones -->
+                <div class="mainposition">
+                    <a href="./pages/new-work.html"><img id="boton-nw" src="resources/design/new work.png" alt="Boton New work" title="Boton New Work"/></a>
+                    <a href="./pages/personal-work.html"><img id="boton-co" src="resources/design/personal-work.png" alt="Boton Contact Me" title="Boton Contact Me"/></a>
+                    <a href="./pages/illustration.html"><img id="boton-ill" src="resources/design/illustration.png" alt="Boton Illustration" title="Boton Illustration"/></a>
+                    <a href="./pages/about.html"> <img id="boton-ab" src="resources/design/ABOUT.png" alt="Boton About" title="Boton About"/></a>
+                    <a href="./pages/contact.html"><img id="boton-co" src="resources/design/CONTACT ME.png" alt="Boton Contact Me" title="Boton Contact Me"/></a>
+                </div>
+            </section>
+                    
+            <!-- CARRUSEL IMAGENES HOME c Bootstrap -->
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img src="./resources/home-imgs/home1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="./resources/home-imgs/home2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="./resources/home-imgs/home3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <img class="botoncarrusel" src="./resources/design/button-left.png" alt="">
+                        <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <img class="botoncarrusel" src="./resources/design/button-right.png" alt="">
+                        <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <!-- CONTACT ME abajo a la izquierda -->
+            <section class="footer__section1">
+                <ul>
+                    <li class="footheads">Contact Me</li>
+                    <li>ARGENTINA</li>
+                    <li>mobile:(+54)911.5041.4442</li>
+                    <li>mail: <a class="mailto" href="mailto:luchob@gmail.com">luchob@gmail.com</a></li>
+                </ul>
+                <!-- SOCIAL abajo a la derecha -->
+                <ul>
+                    <li class="footheads">Social</li>
+                    <li><img class="logoinsta" src="./resources/design/ig.png" alt="logo instagram"><a href="https://www.instagram.com/lucho.retouch/">   @lucho.retouch</a></li>
+                </ul>
+            </section>
+
+            <section class="footer__section2">
+                <!-- COPYRIGHT con Script para que ponga el año automaticamente -->
+                <div>
+                    <p class="copyright">© <script>document.write( new Date().getUTCFullYear() );</script> Lucho.Borlenghi</p>
+                </div>
+            
+                <!-- Boton ir hacia arriba -->
+                <div class="botonnaranja">
+                    <a href="#top"><img class="botontop" src="./resources/design/button-up.png" alt="botton-go-up"></a>
+                </div>
+            </section>
+        </footer>
+        
+        <!-- Script BOOTSTRAP -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    </body>
+</html>

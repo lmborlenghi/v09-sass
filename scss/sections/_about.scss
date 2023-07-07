@@ -1,0 +1,48 @@
+ 
+ .aboutcontainer img{
+    width: 400px;
+  /*   margin-top:10%;
+    margin-bottom: 10%; */
+  }
+  .aboutcontainer .skully{
+    width: 30px;
+    margin-top: 50px;
+  }
+  .aboutcontainer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .about1, .about2{
+    display: flex;
+    width: 400px;
+    line-height: 2;
+    text-align: justify;
+  }
+  .about1{
+    margin-bottom: 25px;
+  }
+  .about2{
+    margin-top: 20px;
+  }
+  
+  .about3{
+    display: flex;
+    justify-content: right;
+    width: 400px;
+    line-height: 2;
+    text-align: right;
+    margin-top: 20px;
+  }
+  
+
+  @media (min-width:768px){
+    .about1, .about2, .about3{
+    width: 50vw;
+    font-size: 20px;
+    }
+          
+          
+            
+}

@@ -1,0 +1,104 @@
+
+ 
+ /* POSICION LOGO Y BOTON HOME */
+ .home-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
+  }
+  .home-container .logohome{
+    width: 70vw;
+    margin-bottom: 10%; 
+  }
+  .home-container .botonhome{
+    width: 10vw;
+  }
+  /* FIN POSICION LOGO Y BOTON HOME */
+  
+  
+  #welcome-id {
+    text-align: center;
+    color: gray;
+    font-size: 50px;
+    font-weight: 50;
+    padding-bottom: 15%;
+    /* margin-top: 70vh; */
+  }
+  #welcome-id2{
+    margin-top: 120vh; 
+    }
+  
+  
+  /* Posicion Welcome y Botonera home */
+  .mainposition { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .mainposition img{
+    height: 75px;
+    margin: 15px 0;
+  }
+  /* CARRUSEL en el INDEX */
+  #carouselExample{
+    margin-top: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10%;
+  }
+  
+  .botoncarrusel{
+    width: 35px;  
+  }
+  
+  /* Centrar flechas en carrusel */
+  .carouselExample, button{
+    top: 50% !important;
+  }
+  
+  
+  @media (min-width:768px){
+     
+    .home-container .logohome{
+        width: 30vw;
+        margin-bottom: 10%; 
+      }
+      .home-container .botonhome{
+        width: 4vw;
+      }
+  
+      #welcome-id {
+        font-size: 70px;
+        font-weight: 50;
+        padding-bottom: 5%;
+        /* margin-top: 70vh; */
+      }
+  
+      #welcome-id2{
+        margin-top: 120vh; 
+        }
+  
+  
+      /* Posicion Welcome y Botonera home */
+      .mainposition { 
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+     
+      }
+      .mainposition img{
+        height: 105px;
+        margin: 15px 15px;
+        /* margin: 0px 30px 0px 30px; */
+      }
+    
+
+  }
