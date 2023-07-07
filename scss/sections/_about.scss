@@ -22,9 +22,11 @@
   }
   .about1{
     margin-bottom: 25px;
+    color: white;
   }
   .about2{
     margin-top: 20px;
+    color: white;
   }
   
   .about3{
@@ -34,13 +36,16 @@
     line-height: 2;
     text-align: right;
     margin-top: 20px;
+    color: white;
   }
+  
   
 
   @media (min-width:768px){
     .about1, .about2, .about3{
     width: 50vw;
     font-size: 20px;
+    color: white;
     }
           
           

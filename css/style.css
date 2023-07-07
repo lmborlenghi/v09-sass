@@ -18,6 +18,9 @@ div.container-fluid {
   width: auto;
   outline: none; }
 
+.nav-link {
+  color: white !important; }
+
 .navbar-toggler, .navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus {
   /* outline: none; */
   /* border: none; */
@@ -91,10 +94,11 @@ header a:hover {
   align-items: center;
   margin: 45px 45px 0px 45px;
   padding: 0;
-  list-style-type: none; }
+  list-style-type: none;
+  color: white; }
 
 .footer a {
-  color: black;
+  color: white;
   text-decoration: none; }
 
 footer a:hover {
@@ -104,7 +108,11 @@ footer a:hover {
 .footheads {
   font-size: 20px;
   font-weight: 400;
-  text-decoration: underline; }
+  text-decoration: underline;
+  color: white; }
+
+.footer__section2 p {
+  color: white; }
 
 /* FIN EL CONTACT ME Y SOCIAL */
 /* Tamaño boton ir hacia arriba */
@@ -283,10 +291,12 @@ p {
   text-align: justify; }
 
 .about1 {
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  color: white; }
 
 .about2 {
-  margin-top: 20px; }
+  margin-top: 20px;
+  color: white; }
 
 .about3 {
   display: flex;
@@ -294,12 +304,14 @@ p {
   width: 400px;
   line-height: 2;
   text-align: right;
-  margin-top: 20px; }
+  margin-top: 20px;
+  color: white; }
 
 @media (min-width: 768px) {
   .about1, .about2, .about3 {
     width: 50vw;
-    font-size: 20px; } }
+    font-size: 20px;
+    color: white; } }
 
 .skully2 {
   display: block;
@@ -394,7 +406,8 @@ p {
   padding: 0; }
 
 body {
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Montserrat', sans-serif;
+  background-color: black; }
 
 .main h1 {
   font-size: 50px;

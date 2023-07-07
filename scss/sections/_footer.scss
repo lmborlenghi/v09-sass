@@ -12,9 +12,10 @@
     margin: 45px 45px 0px 45px;
     padding: 0;
     list-style-type: none;
+    color: white;
   }
   .footer a{
-    color: black;
+    color: white;
     text-decoration: none;  
   }
   footer a:hover {
@@ -25,7 +26,13 @@
     font-size: 20px;
     font-weight:400;
     text-decoration: underline;
+    color: white;
   }
+
+  .footer__section2 p{
+    color: white;
+  }
+
   /* FIN EL CONTACT ME Y SOCIAL */
   
   
