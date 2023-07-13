@@ -1,4 +1,136 @@
 @charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Montserrat', sans-serif; }
+
+.main h1 {
+  font-size: 50px;
+  color: grey;
+  font-weight: 50;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%; }
+
+/* ORDENAR IMAGENES MAIN CON FLEXBOX */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly; }
+
+/* tamaño de la caja donde va la foto */
+.flex-container div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
+  width: 350px;
+  height: 250px;
+  margin: 15px 0px 0px 15px; }
+
+/* tamaño de la foto dentro de la caja - Altura mayor a altura de caja! */
+.imagenes img {
+  height: 300px; }
+
+/* PARA REMOVER ESPACIO ENTRE IMAGENES DEBIDO AL QUE TRAEN LOS ENLACES */
+.flexcontainer a {
+  display: inherit; }
+
+/* ---------------------- MEDIA QUERY PARA PANTALLAS MAS GRANDES ----------------------  */
+@media (min-width: 768px) {
+  .main h1 {
+    font-size: 60px;
+    color: grey;
+    font-weight: 50;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%; } }
+
+/* POSICION LOGO Y BOTON HOME */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 100px;
+  height: 100px;
+  animation: bounceInLeft;
+  animation-duration: 1.5s; }
+
+.home-container .logohome {
+  width: 70vw;
+  margin-bottom: 10%; }
+
+.home-container .botonhome {
+  width: 10vw; }
+
+/* FIN POSICION LOGO Y BOTON HOME */
+#welcome-id {
+  text-align: center;
+  color: gray;
+  font-size: 50px;
+  font-weight: 50;
+  padding-bottom: 15%;
+  /* margin-top: 70vh; */ }
+
+#welcome-id2 {
+  margin-top: 120vh; }
+
+/* Posicion Welcome y Botonera home */
+.mainposition {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.mainposition img {
+  height: 75px;
+  margin: 15px 0; }
+
+/* CARRUSEL en el INDEX */
+#carouselExample {
+  margin-top: 15%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 10%; }
+
+.botoncarrusel {
+  width: 35px; }
+
+/* Centrar flechas en carrusel */
+.carouselExample, button {
+  top: 50% !important; }
+
+@media (min-width: 768px) {
+  .home-container .logohome {
+    width: 30vw;
+    margin-bottom: 10%; }
+  .home-container .botonhome {
+    width: 4vw; }
+  #welcome-id {
+    font-size: 70px;
+    font-weight: 50;
+    padding-bottom: 5%;
+    /* margin-top: 70vh; */ }
+  #welcome-id2 {
+    margin-top: 120vh; }
+  /* Posicion Welcome y Botonera home */
+  .mainposition {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  .mainposition img {
+    height: 105px;
+    margin: 15px 15px;
+    /* margin: 0px 30px 0px 30px; */ } }
+
 /* HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER */
 .header {
   display: flex;
@@ -79,68 +211,6 @@ header a:hover {
     justify-content: center;
     align-items: center; }
   /* FIN HEADER FIN HEADER FIN HEADER FIN HEADER FIN HEADER FIN HEADER   */ }
-
-/* tamaño logo instagram en social */
-.logoinsta {
-  width: 15px; }
-
-/* INICIO EL CONTACT ME Y SOCIAL */
-.footer__section1 ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 45px 45px 0px 45px;
-  padding: 0;
-  list-style-type: none; }
-
-.footer a {
-  color: black;
-  text-decoration: none; }
-
-footer a:hover {
-  color: grey;
-  transition: color 0.3s ease; }
-
-.footheads {
-  font-size: 20px;
-  font-weight: 400;
-  text-decoration: underline; }
-
-/* FIN EL CONTACT ME Y SOCIAL */
-/* Tamaño boton ir hacia arriba */
-footer .botontop {
-  width: 30px; }
-
-/* INICIO ALINEAR COPYRIGHT Y BOTON NARANJA TOP */
-.footer__section2 {
-  margin-top: 15%;
-  margin-bottom: 3%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative; }
-
-.botonnaranja {
-  position: absolute;
-  right: 0;
-  margin-right: 15px; }
-
-/* FIN ALINEAR COPYRIGHT Y BOTON NARANJA TOP */
-@media (min-width: 768px) {
-  /* FOOTER FOOTER FOOTER FOOTER FOOTER */
-  .footer__section2 {
-    margin-top: 7%;
-    margin-bottom: 1%; }
-  footer .botontop {
-    width: 40px; }
-  .copyright {
-    font-size: 14px; }
-  /* INICIO EL CONTACT ME Y SOCIAL */
-  .footer__section1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; }
-  /* FIN EL CONTACT ME Y SOCIAL */ }
 
 .contact_form {
   width: 280px;
@@ -310,132 +380,64 @@ p {
 .skull-a {
   text-decoration: none; }
 
-/* POSICION LOGO Y BOTON HOME */
-.home-container {
+/* tamaño logo instagram en social */
+.logoinsta {
+  width: 15px; }
+
+/* INICIO EL CONTACT ME Y SOCIAL */
+.footer__section1 ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -50px;
-  margin-left: -50px;
-  width: 100px;
-  height: 100px; }
+  margin: 45px 45px 0px 45px;
+  padding: 0;
+  list-style-type: none; }
 
-.home-container .logohome {
-  width: 70vw;
-  margin-bottom: 10%; }
+.footer a {
+  color: black;
+  text-decoration: none; }
 
-.home-container .botonhome {
-  width: 10vw; }
-
-/* FIN POSICION LOGO Y BOTON HOME */
-#welcome-id {
-  text-align: center;
-  color: gray;
-  font-size: 50px;
-  font-weight: 50;
-  padding-bottom: 15%;
-  /* margin-top: 70vh; */ }
-
-#welcome-id2 {
-  margin-top: 120vh; }
-
-/* Posicion Welcome y Botonera home */
-.mainposition {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.mainposition img {
-  height: 75px;
-  margin: 15px 0; }
-
-/* CARRUSEL en el INDEX */
-#carouselExample {
-  margin-top: 15%;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: 10%; }
-
-.botoncarrusel {
-  width: 35px; }
-
-/* Centrar flechas en carrusel */
-.carouselExample, button {
-  top: 50% !important; }
-
-@media (min-width: 768px) {
-  .home-container .logohome {
-    width: 30vw;
-    margin-bottom: 10%; }
-  .home-container .botonhome {
-    width: 4vw; }
-  #welcome-id {
-    font-size: 70px;
-    font-weight: 50;
-    padding-bottom: 5%;
-    /* margin-top: 70vh; */ }
-  #welcome-id2 {
-    margin-top: 120vh; }
-  /* Posicion Welcome y Botonera home */
-  .mainposition {
-    display: flex;
-    flex-direction: row;
-    justify-content: center; }
-  .mainposition img {
-    height: 105px;
-    margin: 15px 15px;
-    /* margin: 0px 30px 0px 30px; */ } }
-
-* {
-  margin: 0;
-  padding: 0; }
-
-body {
-  font-family: 'Montserrat', sans-serif; }
-
-.main h1 {
-  font-size: 50px;
+footer a:hover {
   color: grey;
-  font-weight: 50;
-  text-align: center;
-  margin-top: 5%;
-  margin-bottom: 5%; }
+  transition: color 0.3s ease; }
 
-/* ORDENAR IMAGENES MAIN CON FLEXBOX */
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-evenly; }
+.footheads {
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: underline; }
 
-/* tamaño de la caja donde va la foto */
-.flex-container div {
+/* FIN EL CONTACT ME Y SOCIAL */
+/* Tamaño boton ir hacia arriba */
+footer .botontop {
+  width: 30px; }
+
+/* INICIO ALINEAR COPYRIGHT Y BOTON NARANJA TOP */
+.footer__section2 {
+  margin-top: 15%;
+  margin-bottom: 3%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  align-content: center;
-  overflow: hidden;
-  width: 350px;
-  height: 250px;
-  margin: 15px 0px 0px 15px; }
+  align-items: center;
+  position: relative; }
 
-/* tamaño de la foto dentro de la caja - Altura mayor a altura de caja! */
-.imagenes img {
-  height: 300px; }
+.botonnaranja {
+  position: absolute;
+  right: 0;
+  margin-right: 15px; }
 
-/* PARA REMOVER ESPACIO ENTRE IMAGENES DEBIDO AL QUE TRAEN LOS ENLACES */
-.flexcontainer a {
-  display: inherit; }
-
-/* ---------------------- MEDIA QUERY PARA PANTALLAS MAS GRANDES ----------------------  */
+/* FIN ALINEAR COPYRIGHT Y BOTON NARANJA TOP */
 @media (min-width: 768px) {
-  .main h1 {
-    font-size: 60px;
-    color: grey;
-    font-weight: 50;
-    text-align: center;
-    margin-top: 5%;
-    margin-bottom: 5%; } }
+  /* FOOTER FOOTER FOOTER FOOTER FOOTER */
+  .footer__section2 {
+    margin-top: 7%;
+    margin-bottom: 1%; }
+  footer .botontop {
+    width: 40px; }
+  .copyright {
+    font-size: 14px; }
+  /* INICIO EL CONTACT ME Y SOCIAL */
+  .footer__section1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; }
+  /* FIN EL CONTACT ME Y SOCIAL */ }
