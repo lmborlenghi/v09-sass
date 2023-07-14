@@ -21,34 +21,7 @@ ul{
    list-style: none;
 }
  
- /* ORDENAR IMAGENES MAIN CON FLEXBOX */
- .flex-container{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
- }
- /* tamaño de la caja donde va la foto */
- .flex-container div{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content:center;
-    overflow: hidden;
-    width: 350px;
-    height: 250px;
-    margin: 15px 0px 0px 15px;   
- }
- /* tamaño de la foto dentro de la caja - Altura mayor a altura de caja! */
- .imagenes img{
-    height: 300px;
- }
- /* PARA REMOVER ESPACIO ENTRE IMAGENES DEBIDO AL QUE TRAEN LOS ENLACES */
- .flexcontainer a{
-    display: inherit;
- }
  
-  
  
  
  /* ---------------------- MEDIA QUERY PARA PANTALLAS MAS GRANDES ----------------------  */
