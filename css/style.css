@@ -444,3 +444,39 @@ footer .botontop {
     justify-content: space-between;
     align-items: flex-start; }
   /* FIN EL CONTACT ME Y SOCIAL */ }
+
+#notfound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 95vh;
+  justify-content: center;
+  margin: 15px;
+  border: black solid 2px; }
+  #notfound h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-family: montserrat;
+    font-weight: 900; }
+  #notfound h2 {
+    text-align: center;
+    margin-top: 10px; }
+  #notfound p {
+    width: 250px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px; }
+  #notfound a {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #8f8f8f;
+    border: none;
+    border-radius: 40px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    -webkit-transition: .2s all;
+    transition: .2s all; }
