@@ -1,0 +1,46 @@
+.contactnoform{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .contact-titulo{
+        font-weight: 600;
+        font-size: 20px;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    ul{
+        padding-bottom: 35px;
+    } 
+
+
+}
+
+
+
+@media (min-width:768px){
+ 
+    .contactnoform{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-around;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    
+    
+        .contact-titulo{
+            font-weight: 600;
+            font-size: 30px;
+        }
+        li{
+            font-size: 20px;
+        }
+
+    }
+}
