@@ -330,6 +330,7 @@ p {
     margin-top: 10px;
     text-transform: uppercase;
     background-color: #fe9220;
+    color: white;
     border-radius: 10px;
     width: 400px;
     cursor: pointer; } }
