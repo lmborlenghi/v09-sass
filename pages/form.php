@@ -8,6 +8,10 @@ $telefono = $_POST["telefono"];
 $website = $_POST["website"];
 
 
+$para = "luchob@gmail.com";
+$asunto = "Mensaje de mi sitio web";
+
+
 //Mostrar texto plano
 $header .= "Content-Type: text/plain";
 
@@ -20,8 +24,7 @@ $mensaje .= "website: " . $website . ",\r\n";
 $mensaje .= "Mensaje: " . $_POST["textarea"] . ",\r\n";
 $mensaje .= "Enviado el: " . date('d/m/y', time());
 
-$para = "luchob@gmail.com";
-$asunto = "Mensaje de mi sitio web";
+
 
 //Funcion mail
 //a quien le mando el mail
